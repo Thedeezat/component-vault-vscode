@@ -1,0 +1,67 @@
+{
+  "name": "component-vault",
+  "displayName": "Component Vault",
+  "description": "Quickly save and reuse code snippets with Component Vault",
+  "author": "Thedeezat",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "component-vault.myContextMenuCommand",
+        "title": "Save Code Snippet",
+        "category": "Code Vault"
+      },
+      {
+        "command": "component-vault.insertCodeSnippet",
+        "title": "Insert a Code Snippet",
+        "category": "Code Vault"
+      },
+      {
+        "command": "component-vault.updateCodeSnippet",
+        "title": "Update Existing Code Snippet",
+        "category": "Code Vault"
+      },
+      {
+        "command": "component-vault.deleteCodeSnippet",
+        "title": "Delete a Code Snippet",
+        "category": "Code Vault"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "component-vault.myContextMenuCommand",
+          "when": "editorFocus"
+        },
+        {
+          "command": "component-vault.insertCodeSnippet",
+          "when": "editorFocus"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.81.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3",
+    "@vscode/test-electron": "^2.3.2"
+  }
+}
