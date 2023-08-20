@@ -1,3 +1,7 @@
+## Component Vault
+
+Introducing Component Vault: A Visual Studio Code extension that simplifies code management. Save, insert, update, and delete code snippets effortlessly. Streamline your workflow, boost productivity, and enhance collaboration.
+
 ## How to Use
 
 - Right-click on the code or use Ctrl + Shift + P (Win/Linux) / Cmd + Shift + P (Mac).
