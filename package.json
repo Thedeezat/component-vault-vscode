@@ -4,6 +4,12 @@
   "description": "Quickly save and reuse code snippets with Component Vault",
   "author": "Thedeezat",
   "version": "0.0.1",
+  "icon": "images/logo.png",
+  "publisher": "Component-Vault",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thedeezat/vscode-component-vault"
+  },
   "engines": {
     "vscode": "^1.81.0"
   },

@@ -5,6 +5,7 @@ const vscode = require("vscode");
  */
 function activate(context) {
   // Select code snippet
+
   let disposable = vscode.commands.registerCommand(
     "component-vault.myContextMenuCommand",
 
